@@ -1,0 +1,51 @@
+@media (min-width :900px){
+    header nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav{
+        height: 5rem;
+    }
+    nav .nav-logo-container img{
+        width:4rem;
+        margin-left: 7rem;
+    }
+    nav .nav-name-logo{
+        font-size: 2rem;
+        margin-left: 85px;
+    }
+    nav .nav-name-logo p{
+        margin-left: 7rem;
+    }
+    .nav-icons-container .icons-container{
+        margin-left: 5rem;
+    }
+    .icons-container div img{
+        width: 3rem;
+        margin-top: 5px;
+    }
+    .icons-container div p{
+        font-size: 0.8rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    footer p{
+        font-weight: var(--bold);
+        font-size: 1rem;
+    }
+
+}
+@media (min-width :600px){
+    
+}

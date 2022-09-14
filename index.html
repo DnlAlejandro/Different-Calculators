@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different calcultators</title>
+    <link rel="icon" type="image/png" href="./imgs/calculator.png" sizes="32x32">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="nav-logo-container">
+                <a href="#"><img src="./imgs/calculator.png" alt="Logo of some utilities" > </a>
+            </section>
+            <section class="nav-name-logo">
+                <p>Different calcultators</p>
+            </section>
+            <section class="nav-icons-container">
+                <div class="icons-container">
+                    <div>
+                        <a href="#body-link"><img src="./imgs/body.png" alt="body section"></a>
+                        <p class="p-body">Body</p>
+                    </div>
+                    <div>
+                        <a href="#figures-link"><img src="./imgs/figures.png" alt="figures section"></a>
+                        <p>Figures</p>
+                    </div>
+                    <div>
+                        <a href="#statistics-link"><img src="./imgs/statistics.png" alt="statistics section"></a>
+                        <p>Statistics</p>
+                    </div>
+                    <div class="container-modenight">
+                        <img class="mode"  src="./imgs/sleep-mode.png" alt="dark mode">
+                        <p class="mode-p">Dark mode</p>
+                    </div>
+                    <div class="container-modesun inactive">
+                        <img class="mode"  src="./imgs/brightness.png" alt="dark mode">
+                        <p class="mode-p">Light mode</p>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main class="calculators-main">
+        <h2 class="title">Body Section</h2>
+        <section class="body-calculator" id="body-link">
+            <section class="body-calculator__imc container-card">
+                <h3>Calculate you body mase index</h3>
+                <form id="form-imc" action="">
+                    <div>
+                        <label for="imc-height">Height: </label>
+                        <input id="imc-height" type="number" placeholder="180">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <label for="imc-weight">Weight: </label>
+                        <input id="imc-weight" type="number" placeholder="85">
+                        <span>kg</span>
+                    </div>
+                    <div>
+                        <button id="calculate-imc">Calculate</button>
+                    </div>
+                    <p id="result-form-imc" class="result"></p>
+                </form>
+            </section>
+            <section class="body-calculator__weight-range container-card">
+                <h3>Calculate your ideal weight</h3>
+                <form id="form-weight-range" action="">
+                    <div>
+                        <label for="weight-range__gender">Gender: </label>
+                        <select name="gender" id="weight-range__gender">
+                            <option value="disabled" disabled selected hidden>Male or Female</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="weight-range__height">Height: </label>
+                        <input id="weight-range__height" type="number" placeholder="180">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <button id="calculate-weight-range">Calculate</button>
+                    </div>
+                    <p id="result-form-weight-range" class="result"></p>
+                </form>
+            </section>
+            <section class="body-calculator__bmr container-card">
+                <h3>Calculate your basal metabolic rate</h3>
+                <form id="form-weight-bmr" action="">
+                    <div>
+                        <label for="bmr__age">Age: </label>
+                        <input id="bmr__age" type="number" placeholder="25">
+                    </div>
+                    <div>
+                        <label for="bmr__gender">Gender: </label>
+                        <select name="gender" id="bmr__gender">
+                            <option value="disabled" disabled selected hidden>Male or female</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="bmr__height">Height: </label>
+                        <input id="bmr__height" type="number" placeholder="180">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <label for="bmr__weight">Weight: </label>
+                        <input id="bmr__weight" type="number" placeholder="85">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <label for="bmr__activity">Activity Level: </label>
+                        <select name="activity" id="bmr__activity">
+                            <option value="disabled" disabled selected hidden>1 - 5</option>
+                            <option value="1">1. Sedentary (little or no exercise)</option>
+                            <option value="2">2. Lightly active (1-3 days per week)</option>
+                            <option value="3">3. Moderately active (3-5 days per week)</option>
+                            <option value="4">4. Very active (6-7 days per week)</option>
+                            <option value="5">5. Super active (very hard exercise)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="calculate-bmr">Calculate</button>
+                    </div>
+                    <p id="result-form-bmr" class="result"></p>
+                </form>
+            </section>
+        </section>
+        <h2 class="title">Figures Section</h2>
+        <section class="figures-calculator" id="figures-link">
+            <section class="figures-calculator__square container-card">
+                <h3>Calculate area and perimeter of a square</h3>
+                <form  id="form-square" action="">
+                    <div>
+                        <label for="square-side">Side: </label>
+                        <input id="square-side" type="number" placeholder="15">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <button id="calculate-square">Calculate</button>
+                    </div>
+                    <p id="result-square" class="result"></p>
+                </form>
+            </section>
+            <section class="figures-calculator__circle container-card">
+                <h3>Calculate area and perimeter of a circle</h3>
+                <form  id="form-circle" action="">
+                    <div>
+                        <label for="circle-side">Radius: </label>
+                        <input id="circle-side" type="number" placeholder="20">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <button id="calculate-circle">Calculate</button>
+                    </div>
+                    <p id="result-circle" class="result"></p>
+                </form>
+            </section>
+            <section class="figures-calculator__triangle container-card">
+                <h3>Calculate area and perimeter of a triangle</h3>
+                <form  id="form-triangle" action="">
+                    <div>
+                        <label for="triangle-type">Type: </label>
+                        <select name="triangle-type" id="triangle-type">
+                            <option value="disabled" disabled selected hidden>Type of triangle?</option>
+                            <option value="equilateral">Equilateral</option>
+                            <option value="isosceles">Isosceles</option>
+                            <option value="scalene">Scalene</option>
+                        </select>
+                    </div>
+                    <div class="triangle-inactive" id="triangle-divA">
+                        <label for="triangle-sideA">Side A: </label>
+                        <input id="triangle-sideA" type="" placeholder="15">
+                        <span>cm</span>
+                    </div>
+                    <div class="triangle-inactive" id="triangle-divB">
+                        <label for="triangle-sideB">Side B: </label>
+                        <input id="triangle-sideB" type="number" placeholder="10">
+                        <span>cm</span>
+                    </div>
+                    <div class="triangle-inactive" id="triangle-divC">
+                        <label for="triangle-base">Base: </label>
+                        <input id="triangle-base" type="number" placeholder="8">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <button id="calculate-triangle">Calculate</button>
+                    </div>
+                    <p id="result-triangle" class="result"></p>
+                </form>
+            </section>
+        </section>
+        <h2 class="title">Statistics Section</h2>
+        <section class="statistics-calculator" id="statistics-link">
+            <section class="statistics-calculator__mmm container-card">
+                <h3>Calculate Mean, Median and Mode</h3>
+                <form id="form-mmm" action="">
+                    <div>
+                        <label for="mmm-number">Enter a number: </label>
+                        <input id="mmm-number" type="number" placeholder="1 or 24 or 32...">
+                        <button id="mmm-add">Add</button>
+                    </div>
+                    <div class="dataset">
+                        <label for="mmm-dataset">Your dataset: </label>
+                        <p id="mmm-dataset"></p>
+                        <button id="mmm-reset" class="reset">Reset</button>
+                        <button id="mmm-calculate">Calculate</button>
+                    </div>
+                    <div>
+                        <p id="result-mmm" class="result"></p>
+                    </div>
+                </form>
+            </section>
+            <section class="statistics-calculator__rmm container-card">
+                <h3>Calculate Range, Minimum and Maximum</h3>
+                <form id="form-rmm" action="">
+                    <div>
+                        <label for="rmm-number">Enter a number: </label>
+                        <input id="rmm-number" type="number" placeholder="1 or 24 or 32...">
+                        <button id="rmm-add">Add</button>
+                    </div>
+                    <div class="dataset">
+                        <label for="rmm-dataset">Your dataset: </label>
+                        <p id="rmm-dataset"></p>
+                        <button id="rmm-reset" class="reset">Reset</button>
+                        <button id="rmm-calculate">Calculate</button>
+                    </div>
+                    <div>
+                        <p id="result-rmm" class="result"></p>
+                    </div>
+                </form>
+            </section>
+            <section class="statistics-calculator__sm container-card">
+                <h3>Calculate Summatory and Counting</h3>
+                <form id="form-sm" action="">
+                    <div>
+                        <label for="sm-number">Enter a number: </label>
+                        <input id="sm-number" type="number" placeholder="1 or 24 or 32...">
+                        <button id="sm-add">Add</button>
+                    </div>
+                    <div class="dataset">
+                        <label for="sm-dataset">Your dataset: </label>
+                        <p id="sm-dataset"></p>
+                        <button id="sm-reset" class="reset">Reset</button>
+                        <button id="sm-calculate">Calculate</button>
+                    </div>
+                    <div>
+                        <p id="result-sm" class="result"></p>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Made it by <a href="https://github.com/DnlAlejandro">DnlAlejandro</a> 👨‍💻</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
