@@ -1,6 +1,6 @@
-# Different-Calculators
+# Different Calculators
 Static responsive website themed to get some calculations about your body health, figures, and statistics developed in HTML, CSS, Javascript<br>
-[Check it out on the web](https://dnlalejandro.github.io/curso-frontend-developer-javascript-practico/ "Check it out on the web")
+[Check it out on the web](https://dnlalejandro.github.io/Different-Calculators/ "Check it out on the web")
 ### Mobile
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/mRnD0sz/127-i-Phone-X-2022-9-14-at-6-22-19-P-M.jpg" alt="127-i-Phone-X-2022-9-14-at-6-22-19-P-M" border="0" /></a>
 <br>
