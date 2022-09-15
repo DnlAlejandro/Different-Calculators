@@ -322,7 +322,7 @@ function calculateAreaPerimeterTriangle(event){
     else if(typeFTValue == "scalene"){
         let semiperimeter = ((sideAFTValue + sideBFTValue + baseFTValue) / 2);
         let resultPerimeter = sideAFTValue + sideBFTValue + baseFTValue;
-        let resultArea = Math.sqrt(semiperimeter*(semiperimeter - sideAFTValue)*(semiperimeter - sideBFTValue)*(semiperimeter - baseFTValue));
+        let resultArea =  Math.sqrt(semiperimeter*(semiperimeter - sideAFTValue)*(semiperimeter - sideBFTValue)*(semiperimeter - baseFTValue));
 
         if (!sideAFTValue || !sideBFTValue || !baseFTValue) {
             resultFT.innerHTML = 'You have not completed the required fields';
@@ -468,6 +468,7 @@ function resetDatasetMMM(event){
     datasetMMM.innerHTML = '';
     numbersListMMM = [];
     console.log(numbersListMMM);
+    resultMMM.innerHTML = '';
 }
 
 btnAddRMM.addEventListener('click', addNumbersRMM);
@@ -512,6 +513,7 @@ function resetDatasetRMM(event){
     datasetRMM.innerHTML = '';
     numbersListRMM = [];
     console.log(numbersListRMM);
+    resultRMM.innerHTML = '';
 }
 
 btnAddSM.addEventListener('click', addNumberSM);
@@ -556,4 +558,5 @@ function resetDatasetSM(event){
     datasetSM.innerHTML = '';
     numbersListSM = [];
     console.log(numbersListSM);
+    resultSM.innerHTML = '';
 }
